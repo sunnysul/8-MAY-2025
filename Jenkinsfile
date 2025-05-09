@@ -6,6 +6,7 @@ pipeline {
             steps {
                 echo 'This is simple test file';
                 sh 'whoami'
+                sh 'sudo apt update'
             }
         }
     }
