@@ -20,7 +20,7 @@ pipeline {
                 sh 'pwd'
                 sh 'ls -l'
                 sh 'docker build -t myapp:latest .'
-                sh 'docker run -d -p 80:80 myapp:latest'
+                sh 'docker run -d -p 8081:80 myapp:latest'
             }
         }
     }
