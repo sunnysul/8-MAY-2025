@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'This is simple test file'
+                echo 'This is simple test file';
+                sh 'whoami'
             }
         }
     }
