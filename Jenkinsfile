@@ -13,8 +13,7 @@ pipeline {
                 sh 'docker-compose --version'
                 echo 'Docker and Docker Compose installed successfully'
 
-                // Remove systemctl commands
-                // Check if Docker is running instead
+                echo 'Checking Docker service status...'
                 sh 'docker info || service docker start'
                 echo 'Docker service status checked'
                 
